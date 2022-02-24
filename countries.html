@@ -12,8 +12,23 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
+    <style>
+      #countries {
+        display: grid;
+        grid-gap: 5px;
+        grid-template-columns: repeat(3, 1fr);
+      }
+      .country {
+        border: 3px solid tomato;
+        background-color: burlywood;
+        border-radius: 10px;
+        margin: 10px;
+        padding: 10px;
+      }
+    </style>
   </head>
   <body>
+    <div id="countries-details"></div>
     <h1>Countries Info</h1>
     <div id="countries" class="row"></div>
     <!-- js Countries scripts is here -->
